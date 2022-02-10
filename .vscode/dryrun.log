@@ -1,0 +1,5 @@
+C:\msys64\mingw64\bin\mingw32-make.exe board --dry-run --keep-going --print-directory
+mingw32-make: Entering directory 'c:/Users/Eli Lauwers/Documents/hourglass_c'
+g++ main.o Board.o -o board
+mingw32-make: Leaving directory 'c:/Users/Eli Lauwers/Documents/hourglass_c'
+ 

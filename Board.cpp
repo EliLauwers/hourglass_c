@@ -53,6 +53,17 @@ Board::Board(int dim, std::vector<point> points)
     this->points = points;
 }
 
+bool Board::poi_in_points(point quest_point){
+    for (point point_in_points : points)
+    {
+        if (point_in_points == quest_point)
+        {
+            return true;
+        }
+    }
+    return false;
+}
+
 void Board::print_points()
 {
     for (point p : points)
@@ -106,19 +117,17 @@ point Board::neighbor(point old_point, std::string direction)
     {
         row--;
     }
+
+    point unfound_point (-1, -1);
     // check if any points exceeds dimension
     if (row == -1 || row == dim || col == -1 || col == dim)
     {
-        return point(-1, -1);
+        return unfound_point;
     }
     // check if neighbor is already in points
     point quest_point(col, row);
-    for (point point_in_points : points)
-    {
-        if (point_in_points == quest_point)
-        {
-            return point(-1, -1);
-        }
+    if(this->poi_in_points(quest_point)){
+        return unfound_point;
     }
     return quest_point;
 }
@@ -137,9 +146,11 @@ bool Board::follow_gravity(std::string gravity = "DR")
         {
             continue;
         }
-        points[i] = gravpoint;
+        points.erase(points.begin() + i);
+        points.push_back(gravpoint);
         return true; // the follow worked
     }
+    return false;
 }
 
 bool Board::follow_side(std::string gravity = "DR")
@@ -168,13 +179,16 @@ bool Board::follow_side(std::string gravity = "DR")
         }
         else if (side_points.size() == 1)
         {
-            points[i] = side_points[0];
+            points.erase(points.begin() + i);
+            points.push_back(side_points[0]);
             return true;
         }
         int index = rand() % 2; // get a random number between 0 and 1
-        points[i] = side_points[index];
+        points.erase(points.begin() + i);
+        points.push_back(side_points[index]);
         return true;
     }
+    return false;
 }
 
 bool Board::follow(std::string gravity = "DR")
