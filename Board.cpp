@@ -53,7 +53,8 @@ Board::Board(int dim, std::vector<point> points)
     this->points = points;
 }
 
-bool Board::poi_in_points(point quest_point){
+bool Board::poi_in_points(point quest_point)
+{
     for (point point_in_points : points)
     {
         if (point_in_points == quest_point)
@@ -118,7 +119,7 @@ point Board::neighbor(point old_point, std::string direction)
         row--;
     }
 
-    point unfound_point (-1, -1);
+    point unfound_point(-1, -1); // init an impossible point
     // check if any points exceeds dimension
     if (row == -1 || row == dim || col == -1 || col == dim)
     {
@@ -126,7 +127,8 @@ point Board::neighbor(point old_point, std::string direction)
     }
     // check if neighbor is already in points
     point quest_point(col, row);
-    if(this->poi_in_points(quest_point)){
+    if (this->poi_in_points(quest_point))
+    {
         return unfound_point;
     }
     return quest_point;

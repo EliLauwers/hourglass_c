@@ -8,7 +8,7 @@ mingw32-make: *** No rule to make target 'all'.  Stop.
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Thu Feb 10 09:06:26 2022
+# Make data base, printed on Thu Feb 10 16:28:53 2022
 
 # Variables
 
@@ -25,7 +25,7 @@ USERPROFILE = C:\Users\Eli Lauwers
 # environment
 LOCALAPPDATA = C:\Users\Eli Lauwers\AppData\Local
 # environment
-VSCODE_IPC_HOOK_EXTHOST = \\.\pipe\vscode-ipc-c64cc765-0d06-43a5-8a3f-1c4a6665c519-sock
+VSCODE_IPC_HOOK_EXTHOST = \\.\pipe\vscode-ipc-ef1b8f7e-7bc5-466a-8cc9-0b2f13cdc254-sock
 # environment
 VSCODE_CWD = C:\Users\Eli Lauwers\AppData\Local\Programs\Microsoft VS Code
 # environment
@@ -39,7 +39,7 @@ MAKE_COMMAND := C:/msys64/mingw64/bin/mingw32-make.exe
 # automatic
 @D = $(patsubst %/,%,$(patsubst %\,%,$(dir $@)))
 # environment
-CHROME_CRASHPAD_PIPE_NAME = \\.\pipe\crashpad_4432_PCLDNITSKQFAAHXE
+CHROME_CRASHPAD_PIPE_NAME = \\.\pipe\crashpad_9076_ISYGYTHTWZPYEVBA
 # environment
 ONEDRIVECOMMERCIAL = C:\Users\Eli Lauwers\OneDrive - Be-Mobile NV
 # environment
@@ -97,7 +97,7 @@ MAKEFILE_LIST := makefile
 # environment
 VSCODE_VERBOSE_LOGGING = true
 # environment
-VSCODE_PID = 4432
+VSCODE_PID = 9076
 # automatic
 ?D = $(patsubst %/,%,$(patsubst %\,%,$(dir $?)))
 # automatic
@@ -223,7 +223,7 @@ PROCESSOR_IDENTIFIER = Intel64 Family 6 Model 142 Stepping 12, GenuineIntel
 
 # Directories
 
-# . (key c:/Users/Eli Lauwers/Documents/hourglass_c, mtime 1644479655): 15 files, no impossibilities.
+# . (key c:/Users/Eli Lauwers/Documents/hourglass_c, mtime 1644481225): 15 files, no impossibilities.
 
 # 15 files, no impossibilities in 1 directories.
 
@@ -291,7 +291,8 @@ makefile:
 Board.cpp:
 #  Implicit rule search has not been done.
 #  Modification time never checked.
-#  File has not been updated.
+#  File has not bee 
+n updated.
 
 # files hash-table stats:
 # Load=10/1024=1%, Rehash=0, Collisions=0/26=0%
@@ -307,6 +308,6 @@ Board.cpp:
 # strcache performance: lookups = 34 / hit rate = 41%
 # hash-table stats:
 # Load=20/8192=0%, Rehash=0, Collisions=0/34=0%
-# Finished Make data base on Thu Feb 10 09:06:26 2022
+# Finished Make data base on Thu Feb 10 16:28:53 2022
 
  

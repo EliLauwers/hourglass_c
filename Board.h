@@ -26,7 +26,7 @@ public:
 
     point neighbor(point old_point, std::string direction);
 
-    bool poi_in_points(point quest_point);
+    bool git poi_in_points(point quest_point);
 
     bool follow_gravity(std::string gravity);
 
