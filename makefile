@@ -8,4 +8,4 @@ Board.o: Board.cpp
 	g++ -c Board.cpp
 
 clean:
-	rm *.o board
+	rm *.m Board
