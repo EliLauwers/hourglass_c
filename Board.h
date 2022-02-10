@@ -10,7 +10,6 @@ typedef std::tuple<int, int> point;
 std::string point_to_tuple(point p);
 std::vector<std::string> side_dirs(std::string direction);
 
-
 class Board
 {
 public:
@@ -26,7 +25,7 @@ public:
 
     point neighbor(point old_point, std::string direction);
 
-    bool git poi_in_points(point quest_point);
+    bool poi_in_points(point quest_point);
 
     bool follow_gravity(std::string gravity);
 
